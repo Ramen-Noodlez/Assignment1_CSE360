@@ -9,7 +9,7 @@ public class AddingMachine
   private String history;
   
   /*
-   * constructor to instantiate total as 0
+   * constructor to instantiate total as 0 and history to "0" for further tracking
    */
   public AddingMachine()
   {
@@ -27,7 +27,7 @@ public class AddingMachine
   }
   
   /*
-   * add a value to the total
+   * add a value to the total and record the addition and value to the history string
    * @param value to be added to total
    */
   public void add(int value) 
@@ -37,7 +37,7 @@ public class AddingMachine
   }
 
   /*
-   * subtract a value to the total
+   * subtract a value to the total and record the subtraction and value to the history string
    * @param value to be subtracted to total
    */
   public void subtract(int value)
@@ -47,7 +47,7 @@ public class AddingMachine
   }
 
   /*
-   * create a string representing the history of every add/subtract made to total
+   * return the string containing the history of all operations of the object
    * @return string representing history of the program
    */
   public String toString() 
@@ -56,7 +56,7 @@ public class AddingMachine
   }
 
   /*
-   * clear the memory of the program
+   * "clear" the memory of the program by setting 'total' and 'history' to their default constructor value
    */
   public void clear()
   {
