@@ -1,6 +1,12 @@
+/**
+ * @author Derek Ratliff
+ * Student ID: 1214386212
+ * Date: 5 October 2020 21:27
+ */
+
 package cse360assignment02;
 
-/*
+/**
  * allows an integer perform add and subtract operations while tracking history of each operation.
  */
 public class AddingMachine
@@ -8,7 +14,7 @@ public class AddingMachine
   private int total;
   private String history;
   
-  /*
+  /**
    * constructor to instantiate total as 0 and history to "0" for further tracking
    */
   public AddingMachine()
@@ -17,7 +23,7 @@ public class AddingMachine
     history = "0";
   }
   
-  /*
+  /**
    * get the current total value
    * @return current total value 
    */
@@ -26,7 +32,7 @@ public class AddingMachine
     return total;
   }
   
-  /*
+  /**
    * add a value to the total and record the addition and value to the history string
    * @param value to be added to total
    */
@@ -36,7 +42,7 @@ public class AddingMachine
 	  history += " + " + value;
   }
 
-  /*
+  /**
    * subtract a value to the total and record the subtraction and value to the history string
    * @param value to be subtracted to total
    */
@@ -46,7 +52,7 @@ public class AddingMachine
 	  history += " - " + value;
   }
 
-  /*
+  /**
    * return the string containing the history of all operations of the object
    * @return string representing history of the program
    */
@@ -55,7 +61,7 @@ public class AddingMachine
     return history;
   }
 
-  /*
+  /**
    * "clear" the memory of the program by setting 'total' and 'history' to their default constructor value
    */
   public void clear()
